@@ -1,3 +1,2 @@
-FROM nginx:alpine
-RUN apk add --no-cache nginx-mod-http-lua
-COPY default.conf /etc/nginx/conf.d/
+FROM ilagnev/alpine-nginx-lua
+COPY nginx.conf /etc/nginx/nginx.conf
